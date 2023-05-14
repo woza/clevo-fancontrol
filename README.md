@@ -30,7 +30,7 @@ Build and Install
 
 ```shell
 git clone https://github.com/mmt050/clevo-fancontrol.git
-cd clevo-indicator
+cd clevo-fancontrol
 make install
 ```
 
@@ -68,10 +68,10 @@ Group=root
 Restart=always
 RestartSec=2
 User=root
-ExecStart=/usr/bin/clevo-fancontrol -1
+ExecStart=/usr/local/bin/clevo-fancontrol -1
 
-StandardOutput=syslog
-StandardError=syslog
+StandardOutput=journal
+StandardError=journal
 SyslogIdentifier=clevo-fancontrol
 
 [Install]
